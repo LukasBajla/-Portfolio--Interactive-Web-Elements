@@ -1,0 +1,52 @@
+[
+  {
+    "url": "./images/Archive/NY 09-2018/1.jpg",
+    "category": "filterNY",
+    "name": "New York 1"
+  },
+  {
+    "url": "./images/Archive/NY 09-2018/5.jpg",
+    "category": "filterNY",
+    "name": "New York 2"
+  },
+  {
+    "url": "./images/Archive/NY 09-2018/4.jpg",
+    "category": "filterNY",
+    "name": "New York 3"
+  },
+  {
+    "url": "./images/Archive/London 03-2022/3.jpg",
+    "category": "filterLondon",
+    "name": "New York 4"
+  },
+  {
+    "url": "./images/Archive/London 03-2022/1.jpg",
+    "category": "filterLondon",
+    "name": "London 1"
+  },
+  {
+    "url": "./images/Archive/London 03-2022/2.jpg",
+    "category": "filterLondon",
+    "name": "London 2"
+  },
+  {
+    "url": "./images/Archive/London 03-2022/6.jpg",
+    "category": "filterLondon",
+    "name": "London 3"
+  },
+  {
+    "url": "./images/Archive/Barcelona 05-2023/1.jpg",
+    "category": "filterBarcelona",
+    "name": "Barcelona 1"
+  },
+  {
+    "url": "./images/Archive/Barcelona 05-2023/2.jpg",
+    "category": "filterBarcelona",
+    "name": "Barcelona 2"
+  },
+  {
+    "url": "./images/Archive/Barcelona 05-2023/3.jpg",
+    "category": "filterBarcelona",
+    "name": "Barcelona 3"
+  }
+]

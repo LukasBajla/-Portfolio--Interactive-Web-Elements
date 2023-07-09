@@ -1,0 +1,91 @@
+@import "lightbox.css";
+
+/* ----------- Tag Filtering */
+
+#project-tagfiltering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-block: 4em;
+  gap: 2em;
+}
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.filters__buttons {
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .6em;
+}
+.filters__buttons button {
+  padding: 0.2em 1em;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-60);
+}
+.filters__buttons button:hover {
+    background-color: var(--clr-primary-light);
+    color: var(--clr-primary-dark);
+}
+.filters__buttons [aria-checked="true"] {
+    background-color: var(--clr-primary-light);
+    color: var(--clr-primary-dark);
+
+}
+.filters__buttons [aria-checked="false"] {
+    color: var(--clr-neutral-80);
+}
+
+
+#imageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: .3em;
+}
+#imageContainer img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    background-color: var(--clr-primary-light);
+    opacity: .8;
+    transition: opacity .2s ease-in-out;
+}
+#imageContainer img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@keyframes hidden {
+  0% {
+    transform: scale(.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: .8;
+  }
+}
+
+[aria-hidden = "true"] {
+    display: none;
+}
+[aria-hidden = "false"] {
+    display: inherit;
+}
+.images {
+  overflow: hidden;
+}
+.images img[aria-hidden = "true"] {
+  animation: hidden .25s ease-in-out;    
+}
+.images img[aria-hidden = "false"] {
+  animation: hidden .25s ease-in-out;    
+  
+}

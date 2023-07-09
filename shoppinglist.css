@@ -1,0 +1,124 @@
+@import "lightbox.css";
+
+/* ----------- Tag Filtering */
+
+#project-shoppinglist {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-block: 4em;
+  gap: 2em;
+}
+
+.shoppinglist {
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* -------- INPUT --------*/
+.shoplist__header {
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+.shoplist__header {
+  margin-block: 2em;
+}
+
+.shoplist__header-delete {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  text-transform: uppercase;
+}
+.shoplist__header-delete button {
+  padding: .5em 1em;
+  border-radius: 0;
+  /* height: 100%; */
+}
+
+
+.shoplist__input-cont {
+  display: flex;
+  flex-direction: column;
+
+  /* background-color: gold; */
+}
+.shoplist__input-cont p {
+  text-align: left;
+  font-size: var(--fs-300);
+}
+.shoplist__inputbutton {
+  background-color: var(--clr-primary-dark);
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.shoplist__inputbutton input{
+  border: none;
+  padding: .5em 1em;
+  outline: none;
+}
+.shoplist__inputbutton input::placeholder {
+  opacity: .2;
+}
+.shoplist__inputbutton button {
+  padding-inline: .8em;
+  border-radius: 0;
+}
+.shoplist__inputbutton button:hover {
+  border-radius: 0;
+}
+
+/* ---------- LIST ITEMS ----------*/
+.shoplist__list {
+  /* background-color: rebeccapurple; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: .8em;
+  overflow: hidden;
+
+}
+
+@keyframes anim-shopitem {
+  0% {
+    opacity: 0;
+    transform: translatex(-32px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+.shoplist__item {
+  /* background-color: teal; */
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background-color: var(--clr-primary-dark);
+  padding-inline: .5em;
+  animation: anim-shopitem .25s ease-in-out;
+  overflow: hidden;
+
+}
+.shoplist__item p {
+  justify-self: left;
+  padding: .2em .5em;
+  font-size: var(--fs-500);
+}
+.shoplist__item button {
+  padding: .5em .8em;
+  border-radius: 0;
+  background-color: inherit;
+  transition: opacity .2s ease-in-out;
+}
+.shoplist__item button:hover{
+  color: var(--clr-primary-light);
+  opacity: .2;
+}

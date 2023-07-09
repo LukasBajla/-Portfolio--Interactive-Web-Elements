@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="lightbox.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Interactive Web Elements</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar container -ta-center">
+        <h2 class="-ta-center">Interactive Web Elements</h2>
+        <div id="nav-menu" class="navmenu" aria-hidden="true">
+          <a href="index.html">Home</a>
+          <a href="lightbox.html">Lightbox</a>
+          <a href="tagfilters.html">Archive</a>
+          <a href="shoppinglist.html">Shopping List</a>
+        </div>
+        <button id="nav-hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <div id="nav-list" class="-ta-center hidden">
+        <a href="index.html">Home</a>
+        <a href="lightbox.html">Lightbox</a>
+        <a href="tagfilters.html">Archive</a>
+        <a href="shoppinglist.html">Shopping List</a>
+      </div>
+    </nav>
+
+    <main id="project-main">
+      <div class="container">
+        <h1 id="project__title">main</h1>
+
+        <div class="main__buttonsCont">
+          <a href="lightbox.html"><button class="main__button" >Lightbox</button></a>
+          <a href="tagfilters.html"><button class="main__button" >Archive</button></a>
+          <a href="shoppinglist.html"><button class="main__button" >Shopping List</button></a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <span>Made by <a href="">Lukas Bajla</a></span>
+    </footer>
+
+    <script src="nav.js"></script>
+  </body>
+</html>

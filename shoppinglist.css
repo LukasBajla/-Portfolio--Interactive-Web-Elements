@@ -58,22 +58,45 @@
   background-color: var(--clr-primary-dark);
   display: grid;
   grid-template-columns: 1fr auto;
+
 }
 .shoplist__inputbutton input{
   border: none;
   padding: .5em 1em;
   outline: none;
+  
 }
 .shoplist__inputbutton input::placeholder {
   opacity: .2;
 }
-.shoplist__inputbutton button {
+
+@keyframes anim-buttonPress {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(.6);
+  }
+  100% {
+    transform: scale(1);
+    ;
+  }
+}
+
+#shoplist-input-btn {
+  position: relative;
   padding-inline: .8em;
   border-radius: 0;
+  z-index: 1;
 }
-.shoplist__inputbutton button:hover {
+#shoplist-input-btn:hover {
   border-radius: 0;
 }
+.anim-buttonPress {
+  animation: anim-buttonPress .4s ease-in-out
+}
+
+
 
 /* ---------- LIST ITEMS ----------*/
 .shoplist__list {

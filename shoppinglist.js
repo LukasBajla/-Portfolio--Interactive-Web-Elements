@@ -13,9 +13,14 @@ const shopList = {
   },
   createShoppingItem() {
     shopList.$.inputBtn.addEventListener("click", (e) => {
-      if (shopList.$.inputContent.value == "") return;
+      if (shopList.$.inputContent.value == "") return; 
+      shopList.$.inputBtn.classList.remove("anim-buttonPress");
+      void shopList.$.inputBtn.offsetWidth;
+      shopList.$.inputBtn.classList.add("anim-buttonPress");
       createElements();
       setData();
+      shopList.$.inputContent.value = '';
+
     });
     shopList.$.inputContent.addEventListener("keypress", (e) => {
       if (shopList.$.inputContent.value == "") return;
@@ -71,6 +76,9 @@ const shopList = {
   },
   deleteAll() {
     shopList.$.deleteAll.addEventListener("click", (e) => {
+      shopList.$.deleteAll.classList.remove("anim-buttonPress");
+      void shopList.$.deleteAll.offsetWidth;
+      shopList.$.deleteAll.classList.add("anim-buttonPress");
       localStorage.clear();
       console.log("Local storage cleared");
       const allItems = document.querySelectorAll(".shoplist__item");
